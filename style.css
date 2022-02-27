@@ -1,0 +1,82 @@
+.container {
+    max-width: 1400px;
+}
+
+.title {
+    text-align: center;
+    margin: 50px;
+}
+
+.title h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.col {
+    margin: 10px;
+    width: 225px;
+    background-color: rgb(182, 177, 171);
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 3px solid black;
+}
+
+.col p {
+    margin: 50px 10px 10px 10px;
+}
+
+.list-menu {
+    background-color: pink;
+    height: 20px;
+    width: 140px;
+    padding: 10px;
+    float: right;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.bg-pink {
+    background-color: pink;
+}
+
+.bg-brow {
+    background-color: brown;
+}
+
+.bg-bisque {
+    background-color: bisque;
+}
+
+
+/* RESPOSIVE WEBSITE */
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .col {
+        width: 300px;
+    }
+    .row {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .col {
+        width: 400px;
+    }
+    .row {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
